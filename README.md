@@ -33,6 +33,7 @@ Dungeon Explorer is a 2D grid-based game where players navigate through a dungeo
 
 6. **HUD:**
    - Displays player stats such as health, score, and remaining treasures.
+   - Implemented in `src/HUD.tsx` and updated in real-time using React state management.
 
 7. **Restart Option:**
    - Restart the game at any time using the restart button.
