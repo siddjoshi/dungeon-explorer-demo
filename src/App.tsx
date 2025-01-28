@@ -58,7 +58,8 @@ const App: React.FC = () => {
     setDungeon(newDungeon);
 
     if (dungeon[newY][newX] === 'T') {
-      setHealth(health - 20);
+      setScore(score + 10);
+      setRemainingTreasures(remainingTreasures - 1);
     } else if (dungeon[newY][newX] === 'E') {
       alert('You win!');
     }
