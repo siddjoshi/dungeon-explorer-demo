@@ -51,6 +51,7 @@ test('player steps on trap', () => {
 });
 
 test('player wins the game', () => {
+  const alertSpy = jest.spyOn(window, 'alert').mockImplementation(() => {});
   render(<App />);
   fireEvent.keyDown(window, { key: 'ArrowRight' });
   fireEvent.keyDown(window, { key: 'ArrowRight' });
@@ -59,6 +60,6 @@ test('player wins the game', () => {
   fireEvent.keyDown(window, { key: 'ArrowRight' });
   fireEvent.keyDown(window, { key: 'ArrowRight' });
   fireEvent.keyDown(window, { key: 'ArrowRight' });
-  fireEvent.keyDown(window, { key: 'ArrowRight' });
-  expect(window.alert).toHaveBeenCalledWith('You win!');
+  expect(alertSpy).toHaveBeenCalledWith('You win!');
+  alertSpy.mockRestore();
 });
