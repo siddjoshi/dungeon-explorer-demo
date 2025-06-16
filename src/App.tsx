@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HUD from './HUD';
+import HUD from './HUD.tsx';
 
 const initialDungeon = [
   ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#'],
