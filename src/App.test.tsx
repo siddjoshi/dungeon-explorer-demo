@@ -2,8 +2,9 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders HUD with initial values', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Health: 100/i)).toBeInTheDocument();
+  expect(screen.getByText(/Score: 0/i)).toBeInTheDocument();
+  expect(screen.getByText(/Remaining Treasures: 3/i)).toBeInTheDocument();
 });
