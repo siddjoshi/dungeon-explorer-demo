@@ -5,7 +5,9 @@ A simple **Dungeon Explorer** game built using **React.js**, playable entirely i
 ---
 
 ## **Overview**
-Dungeon Explorer is a 2D grid-based game where players navigate through a dungeon to collect treasures, avoid traps, and reach the exit to win. The game is fully frontend-based and designed to be lightweight and engaging.
+Dungeon Explorer is a 2D grid-based game where players navigate through a dungeon to collect treasures, avoid traps, and reach the exit to win. The game is fully frontend-based and designed to be lightweight and engaging. 
+
+Pull rewuests are welcmoes
 
 ---
 
