@@ -2,6 +2,8 @@
 
 A simple **Dungeon Explorer** game built using **React.js**, playable entirely in the browser without any backend.
 
+Placeholder text
+
 ---
 
 ## **Overview**
